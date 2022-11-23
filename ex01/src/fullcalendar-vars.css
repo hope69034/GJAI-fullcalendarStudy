@@ -1,0 +1,32 @@
+/* 세형 */
+
+/* 캘린더 헤더 */
+/* .fc  {
+  background-color: #ffffff;
+} */
+/* 캘린더 헤더 제외한 */
+tr{
+  background-color: #ffffff;
+}
+ /* 캘린더 본문 */
+/* .fc .fc-view-harness-active > .fc-view{
+  height: 100%;  
+}   */
+
+
+
+.fc-view-harness.fc-view-harness-active {
+  position: initial;
+height: 50%;
+margin-right: 10%;
+}
+
+
+.fc .fc-view-harness-active > .fc-view {
+  height:80%;
+    /* position: absolute; */
+  /*   top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+}

@@ -1,0 +1,104 @@
+/* 승민 */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+body {
+  margin: 0;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+code {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+/* 세형 */
+
+/* 홈 어젠다 */
+.mbsc-event-group.mbsc-material {
+  background: rgb(255, 255, 255);
+}
+/* 홈 +버튼 */
+.MuiBox-root.css-in5br9 {
+  z-index: 20;
+  margin-right:auto;
+}
+/* 푸터  바텀메뉴 */
+.MuiBottomNavigation-root.css-3mtf2r-MuiBottomNavigation-root {
+  z-index: 20;
+}
+/* 푸터 바텀메뉴 */
+.MuiBottomNavigation-root{
+  background:#ffffff;
+}
+/* 캘린더.윈도버전몇개더보기 */
+.mbsc-windows.mbsc-calendar-text-more .mbsc-calendar-label-text{
+  /* font-weight: 600; */
+  content: url("./img/iconUnder.png"); 
+}
+/* 캘린더.윈도우.월화수목 */
+.mbsc-windows.mbsc-calendar-body .mbsc-calendar-week-day{
+  color: #171915;
+  font-size : 15px;
+  
+}
+/* 로그인화면 캐릭터 이미지 */
+.greenihead{
+/*    width: 30%; */
+  margin-bottom: 5%; 
+/*    margin-left: 10%; */
+font-size: 23px;
+    font-variant: all-petite-caps;
+}
+/* 로긴창 */
+.divLogin{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/*   margin-top: 5%; */
+  padding:1px;
+}
+/* 로긴창 글씨*/
+.greeniWelcome{
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+/* + 버튼 */
+.css-1suf56w-MuiButtonBase-root-MuiFab-root{
+  background: #AFE372;
+  margin-right:20px;
+  box-shadow: none;
+}
+
+/* +버튼 틀 */
+/* .css-in5br9{
+background: #73baad;
+} */
+
+/* windows헤더 */  
+.mbsc-windows.mbsc-calendar-button.mbsc-button.mbsc-font{
+  color: #010101;
+  font-weight: 700;
+}
+/* windows헤더 가운데 정렬*/  
+.mbsc-calendar-controls{
+  justify-content: center;
+}
+
+/* 
+.mbsc-calendar-controls .mbsc-windows{
+  margin:auto;
+}   */
+
+/* 그리니 챗봇 */
+.greeniChatbot{
+background: #ffffff;
+}
+/* 챗봇 전체블록*/
+.lfsaZN  {
+  background: #b10808;
+}
+.sc-jrcTuL {
+  background: #b10808;
+ }
+.rsc-container{
+  background: #b10808;
+}

@@ -1,0 +1,36 @@
+.divLogin{
+    width: 90%;
+    height: 20%;
+    /* 밑에 하얀부분 제거(?)*/
+    padding: 20px;
+    background-color: #D7EDBC;
+    scrollbar-width: none;
+}
+
+.greenee{
+    width: 60%;
+    padding: 20px;
+}
+
+/* 회원가입 버튼 */
+.signup_btn{
+    width: 80vw; 
+    margin: auto;
+    margin-Bottom: 8px; 
+    /* background: linear-gradient(to left,#CEDD38,#AFE372);  */
+    background-color:#AFE372;
+    border-radius: 20px;
+}
+
+/* 회원가입 버튼*** */
+.css-sghohy-MuiButtonBase-root-MuiButton-root{
+    background-color: #AFE372;
+}
+
+.login_btn{
+    width:80vw; 
+    margin: auto;
+    margin-Bottom: 8px; 
+    background-color: #CEDD38; 
+    border-radius: 20px;
+}

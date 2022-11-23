@@ -1,0 +1,37 @@
+.test{
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.s_day{
+    background-color: white;
+}
+
+.s_time{
+    background-color: white;
+}
+
+.e_day{
+    background-color: white;
+}
+
+.e_time{
+    background-color: white;
+}
+
+.contents{
+    background-color: white;
+}
+
+.location{
+    background-color: white;
+}
+
+.okay{
+    width:80vw; 
+    margin: auto;
+    margin-Bottom: 8px; 
+    background-color: #CEDD38; 
+    border-radius: 20px;
+}
