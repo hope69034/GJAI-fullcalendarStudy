@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ChatBot from 'react-simple-chatbot';
 import ChatbotReview from './ChatbotReview';
-//import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import greenihead from "../../img/greenihead.png";
 const botAvatar = greenihead;
 //채팅창 css
@@ -124,7 +124,7 @@ class ChatbotSteps extends Component {
     render() {
         return (
             <>
-           {/*  <ThemeProvider theme={theme}>  */}
+            <ThemeProvider theme={theme}> {/* css 채팅창*/}
                 <ChatBot
                 headerTitle="Greeni" //채팅창 타이틀
                 steps={steps} //인풋아웃풋대본
@@ -133,7 +133,7 @@ class ChatbotSteps extends Component {
                 hideUserAvatar='true'
                 /* hideHeader='false' */
                 />  
-            {/* </ThemeProvider> */}
+            </ThemeProvider>
         </>
         );
     }

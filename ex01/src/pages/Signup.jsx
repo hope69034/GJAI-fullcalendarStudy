@@ -1,8 +1,9 @@
-import Signup from '../components/Signup/Signup';
+import Signup from "../components/Signup/Signup";
+
 export default () => {
-  return(
+  return (
     <div>
-      <Signup/>
+      <Signup />
     </div>
   );
-}
+};

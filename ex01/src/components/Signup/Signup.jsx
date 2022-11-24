@@ -8,8 +8,6 @@ import {useDispatch} from 'react-redux';
 import Snackbar from '../FreqCompo/Snackbar';
 import Progress from '../FreqCompo/Progress';
 
-
-
 const steps = ['상세정보', '성향 정보'];
 export default function HorizontalLinearStepper() {
 
@@ -180,7 +178,6 @@ export default function HorizontalLinearStepper() {
               Skip
             </Button>
           )}
-
           <Button onClick={handleNext}>
             {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
           </Button>

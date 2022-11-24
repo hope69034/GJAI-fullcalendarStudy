@@ -1,12 +1,13 @@
-import React from 'react'
-import AddEvent from '../components/AddEvent';
+import React from "react";
+import AddEvent from "../components/AddEvent";
 
 const AddEventPage = () => {
+  
   return (
     <>
-      <AddEvent/>
+      <AddEvent />
     </>
-  )
-}
+  );
+};
 
-export default AddEventPage
+export default AddEventPage;

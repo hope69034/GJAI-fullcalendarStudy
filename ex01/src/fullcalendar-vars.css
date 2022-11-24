@@ -13,14 +13,11 @@ tr{
   height: 100%;  
 }   */
 
-
-
 .fc-view-harness.fc-view-harness-active {
   position: initial;
 height: 50%;
 margin-right: 10%;
 }
-
 
 .fc .fc-view-harness-active > .fc-view {
   height:80%;
@@ -29,4 +26,7 @@ margin-right: 10%;
     right: 0;
     bottom: 0;
     left: 0; */
+}
+.fc .fc-scrollgrid-liquid{
+  height: 120%;
 }

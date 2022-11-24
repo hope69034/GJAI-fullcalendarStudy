@@ -18,7 +18,8 @@ const initialState = { // state 초기 선언
   user: {
     userinfo:[]
   },
-  confirm: false
+  confirm: false,
+  isEventAdded: false,
 }
 
 
@@ -35,8 +36,12 @@ const reducer = (state = initialState, action) =>{
       return {...state, progress: {...state.progress, progressToggle: action.progress.progressToggle}};
     case "USER/USERINFO":
       return {...state, user: {...state.user, userInfo: action.user.userInfo}};
-    case "CONFIRM":
-      return {...state, confirm: action.confirm}
+    case "ISLOGGEDIN":
+      return {...state, isLoggedin: action.isLoggedin}
+    case "ISLOGGEDOUT":
+      return {...state, isLoggedout: action.isLoggedout}
+    case "ISEVENTADDED":
+      return {...state, isEventAdded: action.isEventAdded}
     default:
       return {...state};
   }

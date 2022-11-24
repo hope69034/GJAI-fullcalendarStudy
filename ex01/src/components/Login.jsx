@@ -1,34 +1,13 @@
 import React, {useRef, useEffect} from 'react';
 import {useNavigate} from 'react-router-dom';
-import { FormControl, TextField, Button, colors } from '@mui/material';
+import { FormControl, TextField, Button } from '@mui/material';
 import axios from 'axios';
 import {useDispatch} from 'react-redux';
 import SnackBar from './FreqCompo/Snackbar';
-import Progress from './FreqCompo/Progress';
-import "../css/Login.css";
+import Progress from './FreqCompo/Progress'
+/* import MessageIcon from '@mui/icons-material/Message';
+import { Link } from 'react-router-dom'; */
 import greenee from '../img/greenee.png'
-//import url(spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-
-
-/* mui css에 css파일을 오버라이딩 하기 위한*/
-import { CacheProvider } from "@emotion/react";
-import createCache from "@emotion/cache";
-const cache = createCache({
-  key: "css",
-  prepend: true,
-});
-
-
-//import MessageIcon from '@mui/icons-material/Message';
-//import { Link } from 'react-router-dom';
-//const chatbotButtonStyle={
-  //marginLeft:'85%',
-  /* inlineSize:'3%', */
-//}
-
-
-
-
 
 const Login = () => {
   const nav = useNavigate();
@@ -46,7 +25,7 @@ const Login = () => {
     axios.post(url, {email:emailRef.current.value, pw:pwRef.current.value})
     .then((res)=>{
       if (res.data != "NoneId") {
-        dispatch({type:"CONFIRM", confirm: true}); 
+        dispatch({type:"ISLOGGEDIN", isLoggedin:true}); 
         // Login 컴포넌트에 바로 알람을 출력하면 로그인이 성공이 되면 MyProfile 페이지에서 Login 컴포넌트를 MyProfile 컴포넌트로 전환해버리기 때문에 Login 컴포넌트에 알람을 출력해도 알람이 뜨지 않는다.
         // 그래서 cofirm이라는 변수만 한개 설정한 뒤 MyProfile
       dispatch({type:"PROGRESS", progress:{progressToggle:false}});
@@ -63,37 +42,25 @@ const Login = () => {
     emailRef.current.value = "";
     pwRef.current.value = "";
   }
+
   return (
     <>
-    <CacheProvider value={cache}>
-    
-    
-{/* 
-      <div style={{ backgrounImage : "url(" + greenihead + ")" }}> 
-     <img src='../img/greenihead.png' className='greenihead'></img>   
- <div style={{backgrounImage : "url(" + greenihead + ")"  }}>  */}
- 
-
-    <div className='divLogin'> 
-    
+      {/* <div style={{ backgrounImage : "url(" + greenihead + ")" }}> 
+      <img src='../img/greenihead.png' className='greenihead'></img>   
+      <div style={{backgrounImage : "url(" + greenihead + ")"  }}>*/}  
+    <div className='divLogin' style={{width:"90%", height:'100%', padding:"20px", backgroundColor:'#D7EDBC', scrollbarWidth:'none'}}> 
     {/* <div className='divLogin' style={{    width:"80%", border:"1px solid black", padding:"20px"}}>  */}
-
-
-    <img src={ greenee } className={'greenee'}/> 
+    <img src={ greenee } className={'greenee'} style={{width:"60%", padding:"20px"}} /> 
     <h60 className='greeniWelcome'> Hello, My name is Greeni.</h60>
-
-
       <FormControl fullWidth>
-        <TextField variant="standard" inputRef={emailRef} label='이메일' name='email' onChange={(e)=>{emailRef.current.value = e.target.value}}/><br></br>
-        <TextField variant="standard" inputRef={pwRef} label='비밀번호' name='pw' type="password" onChange={(e)=>{pwRef.current.value = e.target.value;}}/><br></br>
-        <Button variant="contained" onClick={()=>{nav("/signup")}} className='signup_btn' >회원가입</Button>      
-        <Button variant="contained" onClick={checkLogin} className='login_btn'>로그인</Button>
+        <TextField inputRef={emailRef} label='이메일' name='email' onChange={(e)=>{emailRef.current.value = e.target.value}}/><br></br>
+        <TextField inputRef={pwRef} label='비밀번호' name='pw' type="password" onChange={(e)=>{pwRef.current.value = e.target.value;}}/><br></br>
+        <Button variant="contained" onClick={()=>{nav("/signup")}}>회원가입</Button>      
+        <Button onClick={checkLogin}>로그인</Button>
       </FormControl>
       <SnackBar/>
       <Progress/>
-
     </div>
-      </CacheProvider>
     </>
   )
 }

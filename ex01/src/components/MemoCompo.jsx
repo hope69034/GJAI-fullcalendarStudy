@@ -1,14 +1,7 @@
 import React from "react";
 
- 
 
 const MemoCompo = () => {
-  return (
-  <>
-  memoCompo
-  
- 
-  </>
-  )
+  return <>memoCompo</>;
 };
 export default MemoCompo;

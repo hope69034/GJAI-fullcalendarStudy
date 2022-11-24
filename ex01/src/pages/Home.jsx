@@ -1,15 +1,13 @@
-import AddEventButton from '../components/FreqCompo/AddEventButton';
-import Timeline from '../components/Timeline';
-
-/* import LabelBottomNavigation from '../components/LabelBottomNavigation'; */
+/* import AddEventButton from "../components/FreqCompo/AddEventButton"; */
+import Timeline from "../components/Timeline";
+import HeaderAlarm from "../components/HeaderAlarm";
 
 export default () => {
-  return(
+  return (
     <>
-  
-     <AddEventButton/> 
+      {/* <AddEventButton /> */}
+      <HeaderAlarm />
       <Timeline></Timeline>
- 
-      </>
+    </>
   );
-}
+};

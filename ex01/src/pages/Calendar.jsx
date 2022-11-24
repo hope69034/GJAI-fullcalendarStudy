@@ -1,14 +1,13 @@
 import Calendar from "../components/Calendar";
-import AddEventButton from '../components/FreqCompo/AddEventButton';
- 
+import AddEventButton from "../components/FreqCompo/AddEventButton";
+import HeaderAlarm from "../components/HeaderAlarm";
 
- 
 export default () => {
-  return(
+  return (
     <div>
-      <Calendar/>
-     <AddEventButton/>  
-  
+      <HeaderAlarm />
+      <Calendar />
+      {/* <AddEventButton /> */}
     </div>
   );
-}
+};

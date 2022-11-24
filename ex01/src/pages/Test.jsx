@@ -1,7 +1,5 @@
-import TestCompo from '../components/test/testCompo';
+import TestCompo from "../components/test/testCompo";
 
 export default () => {
-  return(
-    <TestCompo/>
-  );  
-}
+  return <TestCompo />;
+};

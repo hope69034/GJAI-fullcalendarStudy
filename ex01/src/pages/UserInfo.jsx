@@ -1,8 +1,9 @@
 import UserInfo from "../components/user/UserInfo";
+
 export default () => {
-  return(
+  return (
     <>
-      <UserInfo/>
+      <UserInfo />
     </>
   );
-}
+};
